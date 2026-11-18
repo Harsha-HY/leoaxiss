@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  /* Cream Theme Foundation */
+  --bg-cream: #faf5ea;
+  --bg-cream-alt: #f3ebdd;
+  --bg-cream-card: #fffefa;
+  --bg-cream-glass: rgba(250, 245, 234, 0.94);
+  --border-cream: #ebdcc8;
+  --border-cream-dark: #dfceb7;
+  --text-cream-heading: #1c1917;
+  --text-cream-body: #574f45;
+  --text-cream-muted: #8c8174;
+
+  /* Dual Color System (Default: Electric Indigo & Sunset Terracotta) */
+  --dual-1: #4f46e5;
+  --dual-1-hover: #4338ca;
+  --dual-1-light: #eef2ff;
+  --dual-1-glow: rgba(79, 70, 229, 0.32);
+
+  --dual-2: #ea580c;
+  --dual-2-hover: #c2410c;
+  --dual-2-light: #fff7ed;
+  --dual-2-glow: rgba(234, 88, 12, 0.30);
+
+  --dual-gradient: linear-gradient(135deg, #4f46e5 0%, #ea580c 100%);
+}
+
+/* Dual Color Theme Presets */
+[data-dual-theme="indigo-terracotta"] {
+  --dual-1: #4f46e5;
+  --dual-1-hover: #4338ca;
+  --dual-1-light: #eef2ff;
+  --dual-1-glow: rgba(79, 70, 229, 0.32);
+  --dual-2: #ea580c;
+  --dual-2-hover: #c2410c;
+  --dual-2-light: #fff7ed;
+  --dual-2-glow: rgba(234, 88, 12, 0.30);
+  --dual-gradient: linear-gradient(135deg, #4f46e5 0%, #ea580c 100%);
+}
+
+[data-dual-theme="violet-lime"] {
+  --dual-1: #7c3aed;
+  --dual-1-hover: #6d28d9;
+  --dual-1-light: #f5f3ff;
+  --dual-1-glow: rgba(124, 58, 237, 0.32);
+  --dual-2: #65a30d;
+  --dual-2-hover: #4d7c0f;
+  --dual-2-light: #f7fee7;
+  --dual-2-glow: rgba(101, 163, 13, 0.30);
+  --dual-gradient: linear-gradient(135deg, #7c3aed 0%, #65a30d 100%);
+}
+
+[data-dual-theme="emerald-amber"] {
+  --dual-1: #059669;
+  --dual-1-hover: #047857;
+  --dual-1-light: #ecfdf5;
+  --dual-1-glow: rgba(5, 150, 105, 0.32);
+  --dual-2: #d97706;
+  --dual-2-hover: #b45309;
+  --dual-2-light: #fffbeb;
+  --dual-2-glow: rgba(217, 119, 6, 0.30);
+  --dual-gradient: linear-gradient(135deg, #059669 0%, #d97706 100%);
+}
+
+[data-dual-theme="obsidian-cyan"] {
+  --dual-1: #0f172a;
+  --dual-1-hover: #1e293b;
+  --dual-1-light: #f1f5f9;
+  --dual-1-glow: rgba(15, 23, 42, 0.32);
+  --dual-2: #0284c7;
+  --dual-2-hover: #0369a1;
+  --dual-2-light: #f0f9ff;
+  --dual-2-glow: rgba(2, 132, 199, 0.30);
+  --dual-gradient: linear-gradient(135deg, #0f172a 0%, #0284c7 100%);
+}
+
+body {
+  color: var(--text-cream-heading);
+  background-color: var(--bg-cream);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Cream Background utilities */
+.bg-cream-canvas {
+  background-color: var(--bg-cream) !important;
+}
+.bg-cream-alt {
+  background-color: var(--bg-cream-alt) !important;
+}
+.bg-cream-card {
+  background-color: var(--bg-cream-card) !important;
+}
+.border-cream-custom {
+  border-color: var(--border-cream) !important;
+}
+
+/* Dual Color utility classes */
+.text-dual-1 {
+  color: var(--dual-1) !important;
+}
+.text-dual-2 {
+  color: var(--dual-2) !important;
+}
+.bg-dual-1 {
+  background-color: var(--dual-1) !important;
+}
+.bg-dual-2 {
+  background-color: var(--dual-2) !important;
+}
+.border-dual-1 {
+  border-color: var(--dual-1) !important;
+}
+.border-dual-2 {
+  border-color: var(--dual-2) !important;
+}
+.dual-gradient-bg {
+  background: var(--dual-gradient) !important;
+}
+.dual-gradient-text {
+  background: var(--dual-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dual-shadow-button {
+  box-shadow: 0 10px 25px -5px var(--dual-1-glow), 0 8px 12px -6px var(--dual-2-glow);
+}
+
+.text-outline {
+  -webkit-text-stroke: 2px var(--text-cream-heading);
+  color: transparent;
+}
+
+@media (max-width: 640px) {
+  .text-outline {
+    -webkit-text-stroke: 1.2px var(--text-cream-heading);
+  }
+}
+
+.glass-nav {
+  background: var(--bg-cream-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-cream);
+}
