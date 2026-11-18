@@ -68,10 +68,18 @@ export default function LeoCta({ onOpenContact }) {
 
               <a
                 href={`tel:${companyInfo.indiaOffice.phoneRaw}`}
-                className="px-6 py-4 rounded-full bg-white/80 hover:bg-white text-[#1c1917] font-bold text-xs sm:text-sm border border-[#1c1917]/20 transition-all flex items-center gap-1.5 cursor-pointer"
+                className="px-5 py-4 rounded-full bg-white/80 hover:bg-white text-[#1c1917] font-bold text-xs sm:text-sm border border-[#1c1917]/20 transition-all flex items-center gap-1.5 cursor-pointer"
+                title="Call India Headquarters"
               >
-                <Phone className="w-3.5 h-3.5" />
-                <span>Call Direct</span>
+                <span>🇮🇳 +91 96180 76715</span>
+              </a>
+
+              <a
+                href={`tel:${companyInfo.irelandOffice.phoneRaw}`}
+                className="px-5 py-4 rounded-full bg-white/80 hover:bg-white text-[#1c1917] font-bold text-xs sm:text-sm border border-[#1c1917]/20 transition-all flex items-center gap-1.5 cursor-pointer"
+                title="Call Europe Hub (Dublin)"
+              >
+                <span>🇪🇺 +353 (89) 254 2002</span>
               </a>
             </div>
 

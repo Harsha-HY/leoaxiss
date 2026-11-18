@@ -155,15 +155,16 @@ export default function LeoHero({ onOpenContact, onNotify }) {
               <span>Hyderabad &bull; building for India &amp; beyond</span>
             </div>
 
-            {/* Studio Big Display Headline with Outline Typography & Typewriter Loop */}
-            <h1 className="text-5xl sm:text-7xl lg:text-[84px] font-extrabold text-[#1c1917] tracking-tight leading-[1.02] font-display">
+            {/* Studio Big Display Headline: Solid Bold Typography with Crisp Dynamic Loop */}
+            <h1 className="text-5xl sm:text-7xl lg:text-[84px] font-black text-[#1c1917] tracking-[-0.035em] leading-[1.04] font-display">
               Ideas with<br />
-              <span className="text-outline font-black tracking-tighter">impact.</span><br />
-              <span className="text-[#1c1917] block text-2xl sm:text-4xl lg:text-[46px] font-extrabold my-2">
-                We build <span className="text-[#4f46e5]">{currentText || 'AI Labs for Schools.'}</span>
-                <span className="inline-block w-1 sm:w-1.5 h-6 sm:h-9 lg:h-11 bg-[#4f46e5] ml-1.5 align-middle animate-pulse rounded-full" />
+              <span className="text-[#1c1917] font-black tracking-[-0.035em] inline-block">impact.</span><br />
+              <span className="text-[#1c1917] block text-2xl sm:text-4xl lg:text-[44px] font-extrabold my-3 sm:my-4 leading-snug tracking-normal">
+                {"We build "}
+                <span className="text-[#2563eb] font-black">{currentText || 'AI Labs for Schools.'}</span>
+                <span className="inline-block w-1 sm:w-1.5 h-6 sm:h-9 lg:h-10 bg-[#2563eb] ml-2 align-middle animate-pulse rounded-full" />
               </span>
-              <span className="bg-gradient-to-r from-[#4f46e5] via-[#7c3aed] to-[#ea580c] text-transparent bg-clip-text font-black">Built loud.</span>
+              <span className="text-[#2563eb] font-black block tracking-[-0.035em]">Built loud.</span>
             </h1>
 
             {/* Authentic LeoAxis Subtitle */}
@@ -184,10 +185,22 @@ export default function LeoHero({ onOpenContact, onNotify }) {
 
               <a
                 href="#selected-work"
-                className="px-6 py-3.5 rounded-full bg-[#fffefa] hover:bg-[#f3ebdd] text-[#1c1917] font-semibold text-sm border border-[#ebdcc8] hover:border-[#4f46e5] transition-colors flex items-center gap-2 cursor-pointer shadow-2xs"
+                className="px-6 py-3.5 rounded-full bg-[#fffefa] hover:bg-[#f3ebdd] text-[#1c1917] font-semibold text-sm border border-[#ebdcc8] hover:border-[#2563eb] transition-colors flex items-center gap-2 cursor-pointer shadow-2xs"
               >
                 <span>See our work</span>
                 <ArrowDown size={15} />
+              </a>
+            </div>
+
+            {/* Direct Dual Regional Hotlines (India & Europe) */}
+            <div className="pt-1 flex flex-wrap items-center gap-3 text-xs font-mono text-[#574f45]">
+              <span className="font-bold text-[#8c8174]">Direct Hotlines:</span>
+              <a href="tel:+919618076715" className="inline-flex items-center gap-1 hover:text-[#2563eb] transition-colors font-semibold">
+                <span>🇮🇳 +91 96180 76715</span>
+              </a>
+              <span className="text-[#ebdcc8]">•</span>
+              <a href="tel:+353892542002" className="inline-flex items-center gap-1 hover:text-[#2563eb] transition-colors font-semibold">
+                <span>🇪🇺 +353 (89) 254 2002</span>
               </a>
             </div>
           </div>

@@ -197,11 +197,14 @@ export default function ContactModal({ isOpen, onClose, initialContext = 'genera
                   </button>
                 </div>
 
-                <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
-                  <span className="flex items-center gap-1">
+                <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-2 text-[11px] text-gray-500">
+                  <div className="flex items-center gap-2">
                     <Phone className="w-3 h-3 text-[#0d44e8]" />
-                    Direct Dial: +91 96180 76715
-                  </span>
+                    <span>Direct:</span>
+                    <a href="tel:+919618076715" className="hover:text-[#0d44e8] font-semibold">🇮🇳 +91 96180 76715</a>
+                    <span>•</span>
+                    <a href="tel:+353892542002" className="hover:text-[#0d44e8] font-semibold">🇪🇺 +353 (89) 254 2002</a>
+                  </div>
                   <span>Strict NDA • No Spam Guarantee</span>
                 </div>
               </form>

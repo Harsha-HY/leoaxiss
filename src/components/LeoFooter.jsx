@@ -125,17 +125,24 @@ export default function LeoFooter({ onOpenContact }) {
               <div className="pt-2 flex flex-col gap-1.5 border-t border-[#ebdcc8]">
                 <a 
                   href={`tel:${companyInfo.indiaOffice.phoneRaw}`} 
-                  className="flex items-center gap-1.5 text-xs font-semibold text-[#1c1917] hover:text-dual-1"
+                  className="flex items-center gap-1.5 text-xs font-semibold text-[#1c1917] hover:text-[#2563eb]"
                 >
-                  <Phone size={13} className="text-dual-1" />
-                  {companyInfo.indiaOffice.phone}
+                  <Phone size={13} className="text-[#2563eb]" />
+                  <span>🇮🇳 {companyInfo.indiaOffice.phone}</span>
+                </a>
+                <a 
+                  href={`tel:${companyInfo.irelandOffice.phoneRaw}`} 
+                  className="flex items-center gap-1.5 text-xs font-semibold text-[#1c1917] hover:text-[#2563eb]"
+                >
+                  <Phone size={13} className="text-[#2563eb]" />
+                  <span>🇪🇺 {companyInfo.irelandOffice.phone}</span>
                 </a>
                 <a 
                   href={`mailto:${companyInfo.indiaOffice.email}`} 
-                  className="flex items-center gap-1.5 text-xs font-semibold text-[#1c1917] hover:text-dual-1"
+                  className="flex items-center gap-1.5 text-xs font-semibold text-[#1c1917] hover:text-[#2563eb]"
                 >
-                  <Mail size={13} className="text-dual-2" />
-                  {companyInfo.indiaOffice.email}
+                  <Mail size={13} className="text-[#ea580c]" />
+                  <span>{companyInfo.indiaOffice.email}</span>
                 </a>
               </div>
             </div>

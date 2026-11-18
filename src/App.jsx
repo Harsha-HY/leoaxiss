@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CreativeCursor from './components/CreativeCursor';
 import LeoNavbar from './components/LeoNavbar';
 import LeoHero from './components/LeoHero';
 import GovernmentProjectsSection from './components/GovernmentProjectsSection';
@@ -37,9 +36,6 @@ export default function App() {
 
   return (
     <div id="top" className="min-h-screen bg-[#faf5ea] text-[#1c1917] selection:bg-dual-1 selection:text-white font-sans antialiased relative" data-dual-theme="indigo-terracotta">
-      {/* Gen-Z Creative Interactive Cursor & Sparkles */}
-      <CreativeCursor />
-
       {/* 1. Creative Studio Navigation Bar */}
       <LeoNavbar 
         onOpenContact={handleOpenContact}

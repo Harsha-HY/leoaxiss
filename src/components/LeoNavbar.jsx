@@ -106,20 +106,31 @@ export default function LeoNavbar({ onOpenContact, onNotify }) {
             </a>
           </nav>
 
-          {/* Right Action CTAs */}
+          {/* Right Action CTAs: Dual Global Hotline Numbers (India HQ + Europe Hub) */}
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href={`tel:${companyInfo.indiaOffice.phoneRaw}`}
-              className="hidden lg:flex items-center gap-1.5 text-xs font-semibold text-[#78716c] hover:text-dual-1 px-3 py-2 rounded-lg hover:bg-[#f3ebdd] transition-colors"
-            >
-              <Phone size={13} className="text-dual-1" />
-              <span>+91 96180 76715</span>
-            </a>
+            <div className="hidden md:flex items-center gap-1.5 text-xs font-mono font-bold text-[#574f45]">
+              <a
+                href="tel:+919618076715"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-[#fffefa] border border-[#ebdcc8] hover:border-[#2563eb] hover:text-[#2563eb] transition-all shadow-2xs whitespace-nowrap"
+                title="India Headquarters (Hyderabad)"
+              >
+                <span className="text-[12px]">🇮🇳</span>
+                <span>+91 96180 76715</span>
+              </a>
+              <a
+                href="tel:+353892542002"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-[#fffefa] border border-[#ebdcc8] hover:border-[#2563eb] hover:text-[#2563eb] transition-all shadow-2xs whitespace-nowrap"
+                title="Europe Hub (Dublin, Ireland)"
+              >
+                <span className="text-[12px]">🇪🇺</span>
+                <span>+353 (89) 254 2002</span>
+              </a>
+            </div>
 
             <button
               type="button"
               onClick={() => onOpenContact('consultation')}
-              className="px-6 py-2.5 rounded-full dual-gradient-bg hover:opacity-90 text-white text-xs sm:text-sm font-bold dual-shadow-button active:scale-95 transition-all cursor-pointer flex items-center gap-1.5"
+              className="px-5 sm:px-6 py-2.5 rounded-full dual-gradient-bg hover:opacity-90 text-white text-xs sm:text-sm font-bold dual-shadow-button active:scale-95 transition-all cursor-pointer flex items-center gap-1.5 shrink-0"
             >
               <span>Start a project</span>
               <ArrowUpRight size={14} />
@@ -176,7 +187,22 @@ export default function LeoNavbar({ onOpenContact, onNotify }) {
               About LeoAxis
             </a>
 
-            <div className="pt-2 border-t border-[#ebdcc8] flex flex-col gap-2">
+            <div className="pt-2 border-t border-[#ebdcc8] grid grid-cols-2 gap-2 text-xs font-mono font-bold text-[#1c1917]">
+              <a
+                href="tel:+919618076715"
+                className="py-2 px-2 rounded-lg bg-[#fffefa] border border-[#ebdcc8] text-center flex items-center justify-center gap-1"
+              >
+                <span>🇮🇳 +91 96180 76715</span>
+              </a>
+              <a
+                href="tel:+353892542002"
+                className="py-2 px-2 rounded-lg bg-[#fffefa] border border-[#ebdcc8] text-center flex items-center justify-center gap-1"
+              >
+                <span>🇪🇺 +353 (89) 254 2002</span>
+              </a>
+            </div>
+
+            <div className="pt-1 flex flex-col gap-2">
               <a
                 href={companyInfo.profilePdf.path}
                 download={companyInfo.profilePdf.filename}
