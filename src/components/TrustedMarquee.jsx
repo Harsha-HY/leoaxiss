@@ -32,13 +32,13 @@ export default function TrustedMarquee() {
         </h3>
       </div>
 
-      {/* Smooth Continuous Left-to-Right Marquee Ticker */}
+      {/* Smooth Continuous Right-to-Left Marquee Ticker */}
       <div className="relative w-full overflow-hidden py-3">
         {/* Edge Gradient Fades */}
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-24 sm:w-36 z-10 bg-gradient-to-r from-[#faf5ea] to-transparent" />
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-24 sm:w-36 z-10 bg-gradient-to-l from-[#faf5ea] to-transparent" />
 
-        <div className="marquee-track-ltr flex items-center gap-4 sm:gap-6">
+        <div className="marquee-track-rtl flex items-center gap-4 sm:gap-6">
           {/* Group 1 */}
           <div className="flex items-center gap-4 sm:gap-6 shrink-0">
             {clients.map((c, i) => (

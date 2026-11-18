@@ -116,9 +116,9 @@ export default function PartnersSection({ onOpenContact }) {
               Backed by Tech Pioneers &amp; National Initiatives.
             </h2>
           </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gray-200 text-xs font-mono text-gray-600 shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-            <span>Auto-cycling telemetry &bull; updates every 3s</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fffefa] border border-[#ebdcc8] text-xs font-mono font-bold text-[#574f45] shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span>Global Cloud &amp; Deep-Tech Partner Alliances</span>
           </div>
         </div>
 

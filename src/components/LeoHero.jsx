@@ -236,8 +236,14 @@ export default function LeoHero({ onOpenContact, onNotify }) {
                 <span className="text-[#ea580c] font-black text-sm leading-none">+</span>
               </motion.div>
 
-              {/* Bottom Left Accent Dot */}
-              <div className="hidden sm:block absolute -bottom-3 left-10 w-4 h-4 rounded-full bg-pink-400 border-2 border-white shadow-md z-30 animate-pulse" />
+              {/* Playful Pink Smiley Sticker (Image match) */}
+              <motion.div
+                animate={{ y: [0, -5, 0], rotate: [-2, 2, -2] }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                className="hidden sm:flex absolute -bottom-5 -left-4 w-12 h-12 rounded-2xl bg-[#f472b6] border-2 border-white shadow-xl items-center justify-center text-slate-950 font-black text-xl select-none z-30"
+              >
+                :)
+              </motion.div>
 
               {/* Main Interactive Animated Studio Tablet (Dark Bezel Hardware Composition) */}
               <motion.div 
@@ -322,17 +328,18 @@ export default function LeoHero({ onOpenContact, onNotify }) {
                   })}
                 </div>
 
-                {/* Dynamic Bottom Telemetry Bar matching Image 2 */}
-                <div className="pt-3.5 border-t border-slate-800/80 flex flex-col gap-1">
+                {/* Dynamic Bottom Telemetry Bar matching Image */}
+                <div className="pt-3.5 border-t border-slate-800/80 flex flex-col gap-1.5">
                   <div className="flex items-center justify-between">
-                    <span className="text-white font-extrabold text-xs sm:text-sm tracking-wide">
+                    <span className="text-white font-extrabold text-sm tracking-wide">
                       {activeApp.title}
                     </span>
-                    <span className="text-[9px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                      active
+                    <span className="text-[11px] font-mono font-bold text-emerald-400 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                      Active in Prod
                     </span>
                   </div>
-                  <div className="text-[10px] font-mono text-slate-400 tracking-wider">
+                  <div className="text-[11px] font-mono text-slate-400 tracking-wider">
                     {activeApp.subtitle}
                   </div>
                 </div>
