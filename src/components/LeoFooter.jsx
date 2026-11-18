@@ -5,6 +5,7 @@ import {
   governmentProjects, 
   partners 
 } from '../data/leoaxisData';
+import { LEOAXIS_LOGO_DATA_URI } from '../data/logoDataUri';
 import { 
   Mail, 
   Phone, 
@@ -25,26 +26,19 @@ export default function LeoFooter({ onOpenContact }) {
           {/* Brand & Mission Column */}
           <div className="lg:col-span-4 space-y-4 text-left">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#fffefa] border border-[#ebdcc8] p-1.5 flex items-center justify-center shadow-xs shrink-0">
-                <svg viewBox="0 0 36 36" className="w-7 h-7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="36" height="36" rx="9" fill="url(#leo-ft-grad)" />
-                  <path d="M18 7L27 12.5V23.5L18 29L9 23.5V12.5L18 7Z" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
-                  <path d="M18 7V29M9 12.5L27 23.5M27 12.5L9 23.5" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
-                  <circle cx="18" cy="18" r="3" fill="white"/>
-                  <defs>
-                    <linearGradient id="leo-ft-grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="var(--dual-1, #4f46e5)"/>
-                      <stop offset="1" stopColor="var(--dual-2, #ea580c)"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
+              <div className="h-11 px-2.5 rounded-xl bg-[#fffefa] border border-[#ebdcc8] flex items-center justify-center shadow-xs shrink-0">
+                <img 
+                  src={LEOAXIS_LOGO_DATA_URI} 
+                  alt="LeoAxis Technologies Logo" 
+                  className="h-8 w-auto object-contain"
+                />
               </div>
-              <div>
-                <div className="font-black text-xl text-[#1c1917] tracking-tight">
-                  Leo<span className="text-dual-1">Axis</span>
+              <div className="flex flex-col text-left">
+                <div className="font-extrabold tracking-[-0.035em] text-[#1c1917] text-2xl leading-none font-display flex items-baseline">
+                  <span>Leo</span><span className="text-[#4f46e5] font-black">Axis</span>
                 </div>
-                <div className="text-[10px] font-mono tracking-widest text-[#78716c] uppercase font-bold">
-                  Technologies Pvt Ltd
+                <div className="text-[8.5px] font-mono tracking-[0.22em] text-[#78716c] font-bold uppercase mt-1">
+                  TECHNOLOGIES PVT LTD
                 </div>
               </div>
             </div>

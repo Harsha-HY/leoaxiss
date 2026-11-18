@@ -29,8 +29,8 @@ export default function WhyChooseLeoAxis({ onOpenContact }) {
               <span className="text-[11px] font-mono font-bold tracking-wider text-emerald-400 uppercase">
                 QUALITY ASSURED ARCHITECTURE
               </span>
-              <h3 className="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
-                Zero tech debt. <span className="text-emerald-400">Grade A+.</span>
+              <h3 className="text-3xl sm:text-[38px] font-extrabold text-white tracking-tight leading-[1.15] font-display">
+                Zero tech debt. <span className="text-emerald-400 font-black">Grade A+.</span>
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
                 Production-grade codebases engineered with microservices, strict linting, zero tech debt, and comprehensive automated test suites.
@@ -83,8 +83,8 @@ export default function WhyChooseLeoAxis({ onOpenContact }) {
               <span className="text-[11px] font-mono font-bold tracking-wider text-lime-900 uppercase">
                 PUNCTUAL DELIVERY COMMITMENTS
               </span>
-              <h3 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
-                Sprint fast. <span className="text-[#4f46e5]">Never slip.</span>
+              <h3 className="text-3xl sm:text-[38px] font-extrabold text-[#1c1917] tracking-tight leading-[1.15] font-display">
+                Sprint fast. <span className="text-[#4f46e5] font-black">Never slip.</span>
               </h3>
               <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal">
                 Agile 2-week sprints with milestone transparency, weekly video demos, and strict SLA delivery commitments with zero deadline slippage.
@@ -128,8 +128,8 @@ export default function WhyChooseLeoAxis({ onOpenContact }) {
               <span className="text-[11px] font-mono font-bold tracking-wider text-purple-900 uppercase">
                 EXPERIENCED ENGINEERING TEAM
               </span>
-              <h3 className="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight leading-tight">
-                Senior leads. <span className="text-[#4f46e5]">Zero outsourcers.</span>
+              <h3 className="text-3xl sm:text-[38px] font-extrabold text-[#1c1917] tracking-tight leading-[1.15] font-display">
+                Senior leads. <span className="text-[#4f46e5] font-black">Zero outsourcers.</span>
               </h3>
               <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-normal">
                 Senior fullstack developers and cloud architects with proven track records building government platforms, fintech systems, and cross-border web apps.
@@ -175,10 +175,10 @@ export default function WhyChooseLeoAxis({ onOpenContact }) {
               <span className="text-[11px] font-mono font-bold tracking-wider text-sky-900 uppercase">
                 MEASURABLE GROWTH OUTCOMES
               </span>
-              <h3 className="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight leading-tight">
-                Sub-second speed. <span className="text-sky-700">Real revenue.</span>
+              <h3 className="text-3xl sm:text-[38px] font-extrabold text-[#1c1917] tracking-tight leading-[1.15] font-display">
+                Sub-second speed. <span className="text-[#0284c7] font-black">Real revenue.</span>
               </h3>
-              <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-normal">
+              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-normal">
                 Platforms designed specifically to convert traffic, retain users, improve Google organic ranking, and directly multiply inbound business revenue.
               </p>
             </div>
@@ -222,10 +222,10 @@ export default function WhyChooseLeoAxis({ onOpenContact }) {
               <span className="text-[11px] font-mono font-bold tracking-wider text-amber-900 uppercase">
                 AFFORDABLE &amp; FAIR PRICING
               </span>
-              <h3 className="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight leading-tight">
-                Pay on approval. <span className="text-amber-700">Zero hidden costs.</span>
+              <h3 className="text-3xl sm:text-[38px] font-extrabold text-[#1c1917] tracking-tight leading-[1.15] font-display">
+                Pay on approval. <span className="text-[#ea580c] font-black">Zero hidden costs.</span>
               </h3>
-              <p className="text-xs sm:text-sm text-amber-900 leading-relaxed font-normal">
+              <p className="text-xs sm:text-sm text-[#574f45] leading-relaxed font-normal">
                 Enterprise-grade architectural quality made accessible for Indian startups, educational institutions, and fast-growing local businesses.
               </p>
             </div>
@@ -272,8 +272,8 @@ export default function WhyChooseLeoAxis({ onOpenContact }) {
               <span className="text-[11px] font-mono font-bold tracking-wider text-sky-400 uppercase">
                 24/7 DEDICATED SRE SUPPORT
               </span>
-              <h3 className="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
-                Always online. <span className="text-sky-400">99.99% uptime.</span>
+              <h3 className="text-3xl sm:text-[38px] font-extrabold text-white tracking-tight leading-[1.15] font-display">
+                Always online. <span className="text-[#38bdf8] font-black">99.99% uptime.</span>
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
                 Dedicated technical maintenance, security vulnerability patching, automated cloud backups, and rapid emergency response SLAs.

@@ -8,9 +8,10 @@ import {
   Download
 } from 'lucide-react'
 import { companyInfo } from '../data/leoaxisData'
+import { LEOAXIS_LOGO_DATA_URI } from '../data/logoDataUri'
 
 // Official LeoAxis Logo Embedded Image
-const LEOAXIS_LOGO_SRC = "/favicon.png.png";
+const LEOAXIS_LOGO_SRC = LEOAXIS_LOGO_DATA_URI;
 
 export default function LeoNavbar({ onOpenContact, onNotify }) {
   const [scrolled, setScrolled] = useState(false)
@@ -50,10 +51,10 @@ export default function LeoNavbar({ onOpenContact, onNotify }) {
             </div>
 
             <div className="flex flex-col text-left">
-              <div className="font-black tracking-tight text-[#1c1917] text-xl leading-tight">
-                Leo<span className="text-dual-1">Axis</span>
+              <div className="font-extrabold tracking-[-0.035em] text-[#1c1917] text-2xl leading-none font-display flex items-baseline">
+                <span>Leo</span><span className="text-[#4f46e5] font-black">Axis</span>
               </div>
-              <span className="text-[9px] font-mono tracking-widest text-[#78716c] font-bold uppercase -mt-0.5">
+              <span className="text-[8.5px] font-mono tracking-[0.22em] text-[#78716c] font-bold uppercase mt-1">
                 TECHNOLOGIES PVT LTD
               </span>
             </div>
